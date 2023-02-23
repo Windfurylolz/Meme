@@ -1,4 +1,4 @@
-https://github.com/Windfurylolz/Meme/actions/workflows/my-basics.yml/badge.svg
+<img src="https://github.com/Windfurylolz/Meme/actions/workflows/my-basics.yml/badge.svg"> <br>
 
 
 
