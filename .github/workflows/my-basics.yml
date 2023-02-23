@@ -32,7 +32,7 @@ jobs:
         
       - name: Git Clone my repo
         uses: actions/checkout@v1
-  
+          
       - name: List current files
         run: ls -la
   
@@ -48,7 +48,7 @@ jobs:
         run: echo "Deploy package name is ${{ env.DEPLOY_PACKAGE_NAME }}"
         
       - name: Lest test packages 1
-      - run: aws --version
+        run: aws --version
       
       - name: Lest test packages 2
-      - run: zip
+        run: zip
