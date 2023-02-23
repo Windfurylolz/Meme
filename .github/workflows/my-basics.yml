@@ -5,7 +5,7 @@
 name: My-Pipeline
 env:
   APPLICATION_NAME   : "MyFlask"
-  DEPLOY_PACKAGE_NAME: "Flask_deploy_ver_$({ github.sha })" 
+  DEPLOY_PACKAGE_NAME: "Flask_deploy_ver_ $({ github.sha })" 
   
 #на что будет реагировать и начинать работать
 on: 
