@@ -25,7 +25,7 @@ jobs:
         run: |
           echo "hello message 1"
           echo "hello message 2"
-          echo "App name: $({ env.DEPLOY_PACKAGE_NAME })
+          echo "App name: $({ env.DEPLOY_PACKAGE_NAME })"
   
   deploy:
     runs-on: ubuntu-latest
