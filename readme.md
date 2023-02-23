@@ -1,3 +1,10 @@
+https://github.com/Windfurylolz/Meme/actions/workflows/my-basics.yml/badge.svg
+
+
+
+====
+All project - by NikhilCodes (github)
+====
 # What it is
 
 A simple social media created using Python Flask API.
