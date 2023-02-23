@@ -1,0 +1,25 @@
+#comment
+#Github Actions
+
+#имя экшона
+name: Ci
+#на что будет реагировать и начинать работать
+on: 
+  push:
+    branches:
+    - main
+#что будет делать: перечисление job'ов
+jobs:
+  test: 
+    runs-on: ubuntu-latest
+  
+    steps:
+      - name: Print Hello Message
+        run: echo "Hello world from test-job"
+  
+  
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Hello Message
+        run: echo "Hello World from deploy-job"
