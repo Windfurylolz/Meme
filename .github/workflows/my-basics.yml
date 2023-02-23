@@ -2,7 +2,11 @@
 #Github Actions
 
 #имя экшона
-name: Ci
+name: My-Pipeline
+env:
+  APPLICATION_NAME   : "MyFlask"
+  DEPLOY_PACKAGE_NAME: "Flask_deploy_ver_$({ github.sha })" 
+  
 #на что будет реагировать и начинать работать
 on: 
   push:
@@ -16,7 +20,12 @@ jobs:
     steps:
       - name: Print Hello Message in test
         run: echo "Hello world from test-job"
-  
+        
+      - name: Execute few commands
+        run: |
+          echo "hello message 1"
+          echo "hello message 2"
+          echo "App name: $({ env.DEPLOY_PACKAGE_NAME })
   
   deploy:
     runs-on: ubuntu-latest
@@ -25,3 +34,6 @@ jobs:
     steps:
       - name: Print Hello Message in deploy
         run: echo "Hello World from deploy-job"
+        
+      - name: Printing deploymend packeg
+        run: echo "Deploy package name is $({ env.DEPLOY_PACKAGE_NAME })"
